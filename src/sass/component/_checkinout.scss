@@ -1,0 +1,29 @@
+.checkinout {
+  position: relative;
+  width: 100%;
+  bottom: -600px;
+  background-color: #dab04d;
+  // background-color: white;
+  top: 510px;
+  padding: 30px;
+  border-radius: 100px;
+  @include flex(center, center);
+  &__in {
+    font-size: 1.3rem;
+    // color: white;
+    &__title {
+      margin-top: -20px;
+    }
+  }
+  &__out {
+    // color: white;
+    font-size: 1.3rem;
+    // margin-left: 20px;
+  }
+  &__btn {
+    margin-top: 18px;
+  }
+}
+.css-170k9md {
+  z-index: 1;
+}

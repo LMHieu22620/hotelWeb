@@ -1,0 +1,11 @@
+.roomslist {
+  padding: 5rem 0;
+  &-center {
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 30px;
+  }
+}

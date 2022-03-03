@@ -1,0 +1,65 @@
+.services {
+  margin-top: 550px;
+  position: relative;
+  &__image {
+    width: 273px;
+    // height: 181px;
+    position: relative;
+  }
+  img {
+    width: 273px;
+    // position: relative;
+  }
+  h4 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 70px;
+    &:hover {
+      color: $main-color;
+      cursor: pointer;
+    }
+  }
+  div {
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+
+  &__see {
+    position: absolute;
+    font-size: 1.2rem;
+    width: 120px;
+    height: 40px;
+    background-color: #1f1f1f;
+    z-index: 1;
+    display: none;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    cursor: pointer;
+    transition: display 0.5s ease;
+  }
+}
+
+.services__image::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 0;
+  background-color: rgba(97, 97, 97, 0.4);
+  transition: all 0.5s ease;
+}
+.services:hover .services__image::before {
+  height: 98%;
+  transition: all 0.2s ease;
+}
+.services:hover .services__see {
+  bottom: 45%;
+  display: block;
+  text-align: center;
+  transform: translate(-50%, -143%);
+  transition: display 0.5s ease;
+}

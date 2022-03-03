@@ -1,0 +1,22 @@
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 3rem 15rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  h1 {
+    font-size: 2.5rem;
+  }
+  &__div {
+    width: 10rem;
+    height: 5px;
+    background: $main-color;
+    margin: 1.7rem auto;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
